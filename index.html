@@ -16,6 +16,25 @@
     </script>
 
     <script type="text/javascript" src="//www.highperformanceformat.com/797e2b4cda73da9ced3d00d5dd45e101/invoke.js"></script>
+// On définit le contenu à répéter
+const adCode = `
+<script>
+  atOptions = {
+    'key' : '797e2b4cda73da9ced3d00d5dd45e101',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+<\/script>
+<script src="//www.highperformanceformat.com/797e2b4cda73da9ced3d00d5dd45e101/invoke.js"><\/script>
+`;
+
+// On l'ajoute au document un certain nombre de fois
+const repetitions = 10; // Change ce nombre avec prudence
+for (let i = 0; i < repetitions; i++) {
+  document.write(adCode);
+}
 
 </body>
 </html>
